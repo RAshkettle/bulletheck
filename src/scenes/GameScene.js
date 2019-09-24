@@ -33,6 +33,7 @@ export default class GameScene extends Phaser.Scene {
         this.bg_2.setOrigin(0, 0);
         this.bg_2.setScrollFactor(0);
         player = this.physics.add.sprite(100, 270, 'playerShip');
+        this.laser = this.sound.add('laser');
 
         leftGun = this.add.image(100, 270, 'shotFired');
         leftGun.setVisible(false);
@@ -116,6 +117,7 @@ export default class GameScene extends Phaser.Scene {
                 if (bulletL && bulletR) {
                     bulletL.fire(player.x + 50, player.y + 20, 'shotFired', 1200, 0);
                     bulletR.fire(player.x + 50, player.y - 20, 'shotFired', 1200, 0);
+                    this.laser.play();
                     lastFired = time + 100;
                 }
             }
