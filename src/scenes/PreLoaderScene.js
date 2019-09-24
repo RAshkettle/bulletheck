@@ -4,6 +4,8 @@ import shipAtlas from '../assets/ship.json';
 import logo from '../assets/logo.png';
 import bg1 from '../assets/BGlayer0.png';
 import bg2 from '../assets/BGlayer1.png';
+import shotFiring from '../assets/shot-firing.png';
+import shotFired from '../assets/shot-fired.png';
 
 
 export default class PreLoaderScene extends Phaser.Scene {
@@ -38,7 +40,7 @@ export default class PreLoaderScene extends Phaser.Scene {
             this.ready();
         });
 
-        this.timedEvent = this.time.delayedCall(3000, this.ready, [], this);
+        this.timedEvent = this.time.delayedCall(100, this.ready, [], this);
 
         // Load the Assets (you know, the whole reason we are here anyway)
         this.load.atlas('myShip', playerShip, shipAtlas);
@@ -46,6 +48,8 @@ export default class PreLoaderScene extends Phaser.Scene {
         this.load.image('logo', logo);
         this.load.image('bg1', bg1);
         this.load.image('bg2', bg2);
+        this.load.image('shotFired', shotFired);
+        this.load.image('shotFiring', shotFiring);
     }
 
     ready() {
