@@ -106,8 +106,7 @@ export default class GameScene extends Phaser.Scene {
         });
     }
 
-    update(time, delta) {
-
+    update(time) {
         if (Number.isNaN(player.x)) {
             player.x = 100;
         }
@@ -141,8 +140,5 @@ export default class GameScene extends Phaser.Scene {
         // scroll the texture of the tilesprites proportionally to the layer
         this.bg_1.tilePositionX += 0.3;
         this.bg_2.tilePositionX += 0.6;
-        
     }
-
-  
 }
