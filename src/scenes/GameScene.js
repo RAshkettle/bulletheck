@@ -107,6 +107,15 @@ export default class GameScene extends Phaser.Scene {
     }
 
     update(time, delta) {
+
+        if (Number.isNaN(player.x)) {
+            player.x = 100;
+        }
+
+        if (Number.isNaN(player.y)) {
+            player.y = 270;
+        }
+
         if (!isFiring) {
             leftGun.setVisible(false);
             rightGun.setVisible(false);
