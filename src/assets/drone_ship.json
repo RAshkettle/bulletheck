@@ -1,0 +1,230 @@
+{
+	"textures": [
+		{
+			"image": "drone_ship.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 336,
+				"h": 57
+			},
+			"scale": 0.0625,
+			"frames": [
+				{
+					"filename": "Exhaust_3_2_000.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 54,
+						"h": 55
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 54,
+						"h": 55
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 54,
+						"h": 55
+					}
+				},
+				{
+					"filename": "Exhaust_3_2_001.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 54,
+						"h": 55
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 54,
+						"h": 55
+					},
+					"frame": {
+						"x": 57,
+						"y": 1,
+						"w": 54,
+						"h": 55
+					}
+				},
+				{
+					"filename": "Exhaust_3_2_002.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 54,
+						"h": 55
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 54,
+						"h": 55
+					},
+					"frame": {
+						"x": 113,
+						"y": 1,
+						"w": 54,
+						"h": 55
+					}
+				},
+				{
+					"filename": "Exhaust_3_2_006.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 54,
+						"h": 55
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 54,
+						"h": 55
+					},
+					"frame": {
+						"x": 113,
+						"y": 1,
+						"w": 54,
+						"h": 55
+					}
+				},
+				{
+					"filename": "Exhaust_3_2_003.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 54,
+						"h": 55
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 54,
+						"h": 55
+					},
+					"frame": {
+						"x": 169,
+						"y": 1,
+						"w": 54,
+						"h": 55
+					}
+				},
+				{
+					"filename": "Exhaust_3_2_005.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 54,
+						"h": 55
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 54,
+						"h": 55
+					},
+					"frame": {
+						"x": 169,
+						"y": 1,
+						"w": 54,
+						"h": 55
+					}
+				},
+				{
+					"filename": "Exhaust_3_2_007.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 54,
+						"h": 55
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 54,
+						"h": 55
+					},
+					"frame": {
+						"x": 169,
+						"y": 1,
+						"w": 54,
+						"h": 55
+					}
+				},
+				{
+					"filename": "Exhaust_3_2_004.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 54,
+						"h": 55
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 54,
+						"h": 55
+					},
+					"frame": {
+						"x": 225,
+						"y": 1,
+						"w": 54,
+						"h": 55
+					}
+				},
+				{
+					"filename": "Exhaust_3_2_008.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 54,
+						"h": 55
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 54,
+						"h": 55
+					},
+					"frame": {
+						"x": 225,
+						"y": 1,
+						"w": 54,
+						"h": 55
+					}
+				},
+				{
+					"filename": "Exhaust_3_2_009.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 54,
+						"h": 55
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 54,
+						"h": 55
+					},
+					"frame": {
+						"x": 281,
+						"y": 1,
+						"w": 54,
+						"h": 55
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:31af72424e127a8e954effd397efd4be:b83c59ad1ce07522fdb22938753a514c:8bf870f26d5b9a9f1e4a5b08cd102d20$"
+	}
+}
