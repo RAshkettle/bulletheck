@@ -4,6 +4,8 @@ import Bullet from './bullet';
 let lastFired = 0;
 let offsetX;
 let offsetY;
+let lives = 3;
+let immuneTimer = 0;
 
 export default class Player extends Phaser.Physics.Arcade.Sprite {
     constructor(scene, x, y) {
@@ -16,6 +18,9 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         this.setAngle(90);
         this.setCollideWorldBounds(true);
         this.isFiring = false;
+        this.isAlive = lives > 0;
+        this.hitPoints = 100;
+        this.isImmune = false;
 
         this.laser = scene.sound.add('laser');
 
@@ -49,6 +54,24 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         this.rightGun.setVisible(false);
     }
 
+    takeDamage(hp = 25) {
+        if (this.isImmune) {
+            return;
+        }
+        this.hitPoints -= hp;
+        if (this.hitPoints < 1) {
+            // Time to Notify of life taken
+            lives -= 1;
+            if (this.isAlive) {
+                this.isImmune = true;
+                immuneTimer = 0;
+            } else {
+                // Notify Game Over
+
+            }
+        }
+    }
+
     update(time) {
         if (Number.isNaN(this.x)) {
             this.x = 100;
@@ -56,6 +79,13 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
         if (Number.isNaN(this.y)) {
             this.y = 270;
+        }
+        if (this.isImmune) {
+            if (time > immuneTimer) {
+                // Blink
+
+                immuneTimer = time + 100;
+            }
         }
         if (!this.isFiring) {
             this.leftGun.setVisible(false);
